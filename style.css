@@ -95,3 +95,41 @@ body {
       -webkit-animation-delay: -1s;
       -moz-animation-delay: -1s;
   }
+           @-webkit-keyframes efeitoCarrosel {
+               from {
+                   -webkit-transform: rotateY(360deg) translateZ(130px) rotateY(-360deg);
+                   -moz-transform: rotateY(360deg) translateZ(130px) rotateY(-360deg);
+                   z-index: 10;
+                   opacity: 1
+               }
+    
+               50% {
+                   z-index: -10;
+               }
+    
+               to {
+                   -webkit-transform: rotateY(0deg) translateZ(130px) rotateY(0deg);
+                   -moz-transform: rotateY(0deg) translateZ(130px) rotateY(0deg);
+                   z-index: 10;
+                   opacity: 1
+               }
+           }
+    
+           @-moz-keyframes efeitoCarrosel {
+            from {
+                   -moz-transform: rotateY(360deg) translateZ(130px) rotateY(-360deg);
+                   z-index: 10;
+                   opacity: 1
+               }
+
+    
+               50% {
+                   z-index: -10;
+               }
+    
+               to {
+                   -moz-transform: rotateY(0deg) translateZ(130px) rotateY(0deg);
+                   z-index: 10;
+                   opacity: 1
+               }}
+               
